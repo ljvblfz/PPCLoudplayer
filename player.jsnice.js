@@ -694,7 +694,7 @@ Util.player = Util.player || {}, Util.player = {
             MessageBox.hideMsg();
           }
         }
-        alert("\u93c1\u7248\u5d41\u9354\u72ba\u6d47\u6fb6\u8fab\u89e6");
+        alert("\u6570\u636e\u52a0\u8f7d\u5931\u8d25");
       }
     };
     /** @type {string} */
@@ -1028,12 +1028,12 @@ Util.player = Util.player || {}, Util.player = {
   var self = {};
   self.video = {};
   /** @type {string} */
-  self.video.NO_PARANT_ID = "\u93c3\u72b3\u6331\u93c0\u60e7\u6ad2\u7039\u7470\u6ad2ID";
+  self.video.NO_PARANT_ID = "\u65e0\u64ad\u653e\u5668\u5bb9\u5668ID";
   self.videoEvt = {};
   /** @type {string} */
-  self.videoEvt.EVENT_INIT_FAILED = "\u9352\u6fc6\ue750\u9356\u6827\u3051\u7490\ufffd";
+  self.videoEvt.EVENT_INIT_FAILED = "\u521d\u59cb\u5316\u5931\u8d25";
   /** @type {string} */
-  self.videoEvt.VIDEO_OBJECT_NOT_FOUND = "\u7f02\u54c4\u76af\u93be\ue15f\u6581\u9363\u3125\ue1ee\u749e\ufffd";
+  self.videoEvt.VIDEO_OBJECT_NOT_FOUND = "\u7f3a\u5c11\u64ad\u653e\u5668\u5bf9\u8c61";
   /** @type {string} */
   self.videoEvt.UNKOWN_ERROR = "Unkown";
   /** @type {string} */
@@ -1046,18 +1046,18 @@ Util.player = Util.player || {}, Util.player = {
   self.videoEvt.MEDIA_ERR_SRC_NOT_SUPPORTED = "Do not support video";
   self.control = {};
   /** @type {string} */
-  self.control.PLAY_BUTTON = "\u93be\ue15f\u6581";
+  self.control.PLAY_BUTTON = "\u64ad\u653e";
   /** @type {string} */
-  self.control.PLAYER_NOT_FOUND = "\u7f02\u54c4\u76af\u93be\ue15f\u6581\u7035\u7845\u8584";
+  self.control.PLAYER_NOT_FOUND = "\u7f3a\u5c11\u64ad\u653e\u5bf9\u8c61";
   self.sys = {};
   /** @type {string} */
-  self.sys.NOT_SUPPORT_WINDOWS_PLATFORM = "\u9429\ue1bc\u58a0\u7459\u55db\ue576\u93cd\u714e\u7d21\u951b\u5c7c\u7b09\u93c0\ue21b\u5bd4windows\u9a9e\u51b2\u5f74";
+  self.sys.NOT_SUPPORT_WINDOWS_PLATFORM = "\u76ee\u524d\u89c6\u9891\u683c\u5f0f\uff0c\u4e0d\u652f\u6301windows\u5e73\u53f0";
   /** @type {string} */
-  self.sys.ADD = "\u6fa7\u70b2\u59de";
+  self.sys.ADD = "\u589e\u52a0";
   /** @type {string} */
-  self.sys.SUCCESS = "\u93b4\u612c\u59db";
+  self.sys.SUCCESS = "\u6210\u529f";
   /** @type {string} */
-  self.sys.TRIGGER = "\u7459\ufe40\u5f42";
+  self.sys.TRIGGER = "\u89e6\u53d1";
   mergeOptions("CONST.MESSEAGE.VIDEO", self.video);
   mergeOptions("CONST.MESSEAGE.VIDEOEVT", self.videoEvt);
   mergeOptions("CONST.MESSEAGE.CONTROL", self.control);
@@ -1568,7 +1568,7 @@ Util.player = Util.player || {}, Util.player = {
   });
 }(), function() {
   (0, Util.player.makeNS)("H5player.UI.videoTML", {
-    tpl : '<video id="{videoId}" style="display: none;" poster="{poster}" class="{cls}" width="{width}" height="{height}" preload="auto" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow">\u93ae\u3127\u6b91\u5a34\u5fda\ue74d\u9363\u3124\u7b09\u93c0\ue21b\u5bd4HTML5\u951b\u5c7e\u68e4\u5a09\u66e1\ue747\u942a\u5b2b\u579c\u6d60\ue101\u5f41\u6e1a\u6d9a\u6b91\u7459\u55db\ue576\u951b\u4f78\u7f13\u7481\ue1bb\u5a07\u9422\u3129\u73ee\u9417\u581f\u6e70\u5a34\u5fda\ue74d\u9363\u3128\ue747\u942a\ufffd,\u748b\u3223\u963f\u951b\u4e84tracks}</video>'
+    tpl : '<video id="{videoId}" style="display: none;" poster="{poster}" class="{cls}" width="{width}" height="{height}" preload="auto" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow">\u60a8\u7684\u6d4f\u89c8\u5668\u4e0d\u652f\u6301HTML5\uff0c\u65e0\u6cd5\u89c2\u770b\u6211\u4eec\u63d0\u4f9b\u7684\u89c6\u9891\uff01\u5efa\u8bae\u4f7f\u7528\u9ad8\u7248\u672c\u6d4f\u89c8\u5668\u89c2\u770b,\u8c22\u8c22\uff01{tracks}</video>'
   });
 }(), function() {
   (0, Util.player.makeNS)("H5player.UI.loaderSvgTmpl", {
@@ -2684,7 +2684,7 @@ Util.player = Util.player || {}, Util.player = {
   var Dialog = window.H5player.VideoEvt;
   var parent = PPPlayerLog;
   /**
-   * @param {(Document|string)} path
+   * @param {string} path
    * @return {undefined}
    */
   var update = function(path) {
@@ -3384,7 +3384,7 @@ Util.player = Util.player || {}, Util.player = {
       width : "100%",
       height : "100%",
       reportVideoEvent : config.reportVideoEvent || function(packet) {
-        console.log("\u6d5c\u5b29\u6b22\u7eeb\u8bf2\u7037: " + packet.type + " , \u5a11\u581f\u4f05\u6d93\ufffd: " + packet.msg);
+        console.log("\u4e8b\u4ef6\u7c7b\u578b: " + packet.type + " , \u6d88\u606f\u4e3a: " + packet.msg);
       },
       errorCall : config.errorCall || null,
       isDebug : config.isDebug || null,
@@ -3462,7 +3462,7 @@ Util.player = Util.player || {}, Util.player = {
    */
   var init = function(params) {
     if (params.w = params.w ? params.w : "100%", params.h = params.h ? params.h : "100%", !initialize()) {
-      return'<div style="text-align:center;color:#999; padding:100px 0; line-height:2; background:#000;">\u93ae\u3126\u75c5\u93c8\u590a\u7568\u7441\u531clashPlayer <a target="_blank" href="http://get.adobe.com/cn/flashplayer/" style="color:#ff0;">\u7487\u98ce\u5063\u9351\u7ed8\ue11d\u6fb6\u52eb\u5e53\u6d93\u5b2d\u6d47\u7039\u590e\ue5ca\u93c8\u20ac\u93c2\u626e\u6b91FlashPlayer</a><br/>\u7039\u590e\ue5ca\u7039\u5c7e\u762f\u6d94\u5b2a\u6097\u7487\u5cf0\u57db\u93c2\u4f34\u3009\u95c8\u3221\u57a8\u9470\u5474\u5678\u93c2\u677f\u60ce\u9354\u3126\u797b\u7459\u581d\u6ad2\u9286\ufffd</div><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0 width="1" height="1"></object>'
+      return'<div style="text-align:center;color:#999; padding:100px 0; line-height:2; background:#000;">\u60a8\u6ca1\u6709\u5b89\u88c5FlashPlayer <a target="_blank" href="http://get.adobe.com/cn/flashplayer/" style="color:#ff0;">\u8bf7\u70b9\u51fb\u6b64\u5904\u53bb\u4e0b\u8f7d\u5b89\u88c5\u6700\u65b0\u7684FlashPlayer</a><br/>\u5b89\u88c5\u5b8c\u6bd5\u4e4b\u540e\u8bf7\u5237\u65b0\u9875\u9762\u6216\u8005\u91cd\u65b0\u542f\u52a8\u6d4f\u89c8\u5668\u3002</div><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0 width="1" height="1"></object>'
       ;
     }
     /** @type {string} */
@@ -3707,7 +3707,7 @@ Util.player = Util.player || {}, Util.player = {
   /** @type {string} */
   var message = "{proto}://{dm}/svc/{playerType}/pl/{playCode}.{type}?ydpf_ut={ydpf_ut}";
   /**
-   * @param {string} event_data
+   * @param {?} event_data
    * @param {Object} data
    * @return {?}
    */
@@ -3723,7 +3723,7 @@ Util.player = Util.player || {}, Util.player = {
     return data && (message = "{proto}://{dm}/svc/{playerType}/pl/{playCode}/token/" + data + ".{type}?ydpf_ut={ydpf_ut}"), isMobile.any() || (doc.playerType = "flashplayer", doc.type = "swf", message = "{proto}://{dm}/svc/{playerType}/pl/{playCode}.{type}", data && (message = "{proto}://{dm}/svc/{playerType}/pl/{playCode}/token/" + data + ".{type}")), test(message, doc);
   };
   /**
-   * @param {?} consume
+   * @param {Blob} consume
    * @return {?}
    */
   var match = function(consume) {
@@ -3781,7 +3781,7 @@ Util.player = Util.player || {}, Util.player = {
           if (config.notResourceTip) {
             return void config.notResourceTip.call(file, config.playCode);
           }
-          alert("\u8930\u64b3\u58a0\u74a7\u52ec\u7c2e\u6d93\u5d85\u5f72\u6d60\u30e6\u6331\u93c0\ufffd");
+          alert("\u5f53\u524d\u8d44\u6e90\u4e0d\u53ef\u4ee5\u64ad\u653e");
         }
       },
       /**
@@ -3791,7 +3791,7 @@ Util.player = Util.player || {}, Util.player = {
         if (config.notResourceTip) {
           return void config.notResourceTip.call(file, config.playCode);
         }
-        alert("\u8930\u64b3\u58a0\u74a7\u52ec\u7c2e\u6d93\u5d85\u5f72\u6d60\u30e6\u6331\u93c0\ufffd");
+        alert("\u5f53\u524d\u8d44\u6e90\u4e0d\u53ef\u4ee5\u64ad\u653e");
       }
     });
   };
